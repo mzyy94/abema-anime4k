@@ -1,0 +1,12 @@
+{
+  "name": "abema-anime4k-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc index.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}

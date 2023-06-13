@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "ABEMA Anime4K Extension",
+    "description": "Watch better anime content!",
+    "version": "1.0.0",
+    "icons": {
+        "128": "icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://abema.tv/*"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "tabGroups"
+    ]
+}
