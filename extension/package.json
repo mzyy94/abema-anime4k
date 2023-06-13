@@ -7,6 +7,7 @@
     "build": "tsc"
   },
   "dependencies": {
+    "chrome-types": "^0.1.204",
     "typescript": "^5.0.4"
   }
 }

@@ -6,17 +6,10 @@
     "icons": {
         "128": "icon-128.png"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://abema.tv/*"
-            ],
-            "js": [
-                "dist/anime4k.js",
-                "dist/index.js"
-            ]
-        }
-    ],
+    "action": {},
+    "background": {
+        "service_worker": "dist/background.js"
+    },
     "permissions": [
         "activeTab",
         "scripting",

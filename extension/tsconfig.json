@@ -1,15 +1,23 @@
 {
     "compilerOptions": {
-      "target": "es2020",
-      "module": "es2020",
-      "sourceMap": true,
-      "outDir": "./dist",
-      "rootDir": "./",
-      "strict": true,
-      "baseUrl": "src",
-      "skipLibCheck": true
+        "target": "es2020",
+        "module": "es2020",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "rootDir": "./",
+        "strict": true,
+        "baseUrl": "src",
+        "skipLibCheck": true,
+        "types": [
+            "chrome-types"
+        ]
     },
-    "include": ["index.ts"],
-    "exclude": ["dist", "node_modules"],
-  }
-  
+    "include": [
+        "index.ts",
+        "background.ts"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}
