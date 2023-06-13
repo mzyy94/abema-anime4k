@@ -1,7 +1,16 @@
 {
     "private": true,
+    "scripts": {
+        "build-anime4k": "run-z --then yarn workspace anime4k.js build",
+        "copy-anime4k": "run-z --then cp -r Anime4K.js/dist extension/",
+        "build-extension": "run-z --then yarn workspace abema-anime4k-extension build",
+        "build": "run-z build-anime4k copy-anime4k,build-extension"
+    },
     "workspaces": [
         "Anime4K.js",
         "extension"
-    ]
+    ],
+    "dependencies": {
+        "run-z": "^1.11.0"
+    }
 }
