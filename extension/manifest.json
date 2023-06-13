@@ -12,7 +12,8 @@
                 "https://abema.tv/*"
             ],
             "js": [
-                "index.js"
+                "dist/anime4k.js",
+                "dist/index.js"
             ]
         }
     ],

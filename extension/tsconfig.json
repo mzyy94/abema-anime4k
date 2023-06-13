@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "es2020",
+      "sourceMap": true,
+      "outDir": "./dist",
+      "rootDir": "./",
+      "strict": true,
+      "baseUrl": "src",
+      "skipLibCheck": true
+    },
+    "include": ["index.ts"],
+    "exclude": ["dist", "node_modules"],
+  }
+  

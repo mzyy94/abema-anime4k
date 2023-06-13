@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc index.ts"
+    "build": "tsc"
   },
   "dependencies": {
     "typescript": "^5.0.4"
