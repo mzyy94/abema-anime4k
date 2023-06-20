@@ -1,7 +1,7 @@
 declare var Anime4KJS: any;
 declare var upscaler: any;
 
-if (window.upscaler) {
+{
     const v: HTMLVideoElement | null = document.querySelector('video[src]');
     const c = document.getElementById('4k-scaler');
     if (v && c) {
@@ -14,20 +14,20 @@ if (window.upscaler) {
             v.style.visibility = 'hidden';
             upscaler.start();
         }
+    } else {
+        init();
     }
-} else {
-    init();
 }
 
 function init() {
+    window.upscaler?.stop();
+    window.upscaler?.detachVideo();
     const v: HTMLVideoElement | null = document.querySelector('video[src]');
     const p = v?.parentElement;
     const c = document.createElement('canvas');
     if (!v || !p) return;
 
     c.id = '4k-scaler';
-    c.width = v.videoWidth * 2;
-    c.height = v.videoHeight * 2;
     c.style.height = '100%';
     c.style.aspectRatio = `${v.videoWidth}/${v.videoHeight}`;
 
